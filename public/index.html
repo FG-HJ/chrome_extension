@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Viewer</title>
+  <meta charset="UTF-8" />
+  <link href="/styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="video">
+      <video id="watch" playsinline controls loop autoplay></video>
+    </div>
+    <div class="result">
+      <div class="casino-video-cards">
+        <div class="usera">
+          <h5 class="">Player A</h5>
+          <input type="number" value="0" name="anum" class="anum" hidden>
+          <div class="flip-card-container">
+            <div class="flip-card">
+              <div class="flip-card-inner ">
+                <div class="flip-card-front"><img
+                    src="https://versionobj.ecoassetsservice.com/v21/static/front/img/cards/1.jpg"></div>
+                <div class="flip-card-back"><img
+                    src="https://versionobj.ecoassetsservice.com/v21/static/front/img/cards/1.jpg"></div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner ">
+                <div class="flip-card-front"><img
+                    src="https://versionobj.ecoassetsservice.com/v21/static/front/img/cards/1.jpg"></div>
+                <div class="flip-card-back"><img
+                    src="https://versionobj.ecoassetsservice.com/v21/static/front/img/cards/1.jpg"></div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner ">
+                <div class="flip-card-front"><img
+                    src="https://versionobj.ecoassetsservice.com/v21/static/front/img/cards/1.jpg"></div>
+                <div class="flip-card-back"><img
+                    src="https://versionobj.ecoassetsservice.com/v21/static/front/img/cards/1.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-1 userb">
+          <input type="number" value="0" name="bnum" class="bnum" hidden>
+          <h5 class="">Player B</h5>
+          <div class="flip-card-container">
+            <div class="flip-card">
+              <div class="flip-card-inner ">
+                <div class="flip-card-front"><img
+                    src="https://versionobj.ecoassetsservice.com/v21/static/front/img/cards/1.jpg"></div>
+                <div class="flip-card-back"><img
+                    src="https://versionobj.ecoassetsservice.com/v21/static/front/img/cards/1.jpg"></div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner ">
+                <div class="flip-card-front"><img
+                    src="https://versionobj.ecoassetsservice.com/v21/static/front/img/cards/1.jpg"></div>
+                <div class="flip-card-back"><img
+                    src="https://versionobj.ecoassetsservice.com/v21/static/front/img/cards/1.jpg"></div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner ">
+                <div class="flip-card-front"><img
+                    src="https://versionobj.ecoassetsservice.com/v21/static/front/img/cards/1.jpg"></div>
+                <div class="flip-card-back"><img
+                    src="https://versionobj.ecoassetsservice.com/v21/static/front/img/cards/1.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- <button id="enable-audio">Enable audio</button> -->
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/watch.js"></script>
+</body>
+
+</html>
