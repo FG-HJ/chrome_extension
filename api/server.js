@@ -13,7 +13,8 @@ const io = require("socket.io")(server, {
   cors: {
     origin: '*',
     allowedHeaders: ["authorization"]
-  }
+  },
+  addTrailingSlash: false 
 });
 app.use(cors({
   origin: "https://allpanelexch.com/"
