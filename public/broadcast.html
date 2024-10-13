@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Broadcaster</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <section class="select">
+      <label for="audioSource">Audio source: </label>
+      <select id="audioSource"></select>
+    </section>
+
+    <section class="select">
+      <label for="videoSource">Video source: </label>
+      <select id="videoSource"></select>
+    </section>
+
+    <video id="broadcast" playsinline controls loop muted autoplay width="640" height="480" >
+      <source src="1.mp4" type="video/mp4"/>
+      <p>This browser does not support the video element.</p>
+  </video>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/broadcast.js"></script>
+  </body>
+</html>

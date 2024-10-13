@@ -1,5 +1,3 @@
-const io = new Server(res.socket.server,{ path: '/api/socket',addTrailingSlash: false });
-res.socket.server.io = io;
 let peerConnection;
 const config = {
   iceServers: [
