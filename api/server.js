@@ -20,6 +20,9 @@ app.use(cors({
   origin: "https://allpanelexch.com/"
 }))
 app.use(express.static(__dirname + "/public"));
+app.get('/', function(req, res) {
+  res.render('index.html');
+});
 
 io.sockets.on("error", e => console.log(e));
 io.sockets.on("connection", socket => {
